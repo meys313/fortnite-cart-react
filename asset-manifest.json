@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/fortnite-cart-react.git/static/css/main.1b62c6dd.css",
-    "main.js": "/fortnite-cart-react.git/static/js/main.68f4cbf0.js",
+    "main.css": "/fortnite-cart-react.git/static/css/main.095562c1.css",
+    "main.js": "/fortnite-cart-react.git/static/js/main.4a300bb2.js",
+    "static/media/bootstrap-icons.woff?": "/fortnite-cart-react.git/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/fortnite-cart-react.git/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "index.html": "/fortnite-cart-react.git/index.html",
-    "main.1b62c6dd.css.map": "/fortnite-cart-react.git/static/css/main.1b62c6dd.css.map",
-    "main.68f4cbf0.js.map": "/fortnite-cart-react.git/static/js/main.68f4cbf0.js.map"
+    "main.095562c1.css.map": "/fortnite-cart-react.git/static/css/main.095562c1.css.map",
+    "main.4a300bb2.js.map": "/fortnite-cart-react.git/static/js/main.4a300bb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b62c6dd.css",
-    "static/js/main.68f4cbf0.js"
+    "static/css/main.095562c1.css",
+    "static/js/main.4a300bb2.js"
   ]
 }
