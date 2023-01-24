@@ -1,0 +1,33 @@
+@import '../../vars';
+.shop-item{
+  margin: 0 auto 2rem auto;
+  width: 100%;
+  cursor: pointer;
+  &__buttons{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    .card-link{
+      align-self: center;
+      color: $mainBgColor;
+    }
+
+    button{
+      //background: linear-gradient(to right,#8AD246 , $mainBgColor);
+      background-color: #71BB33;
+      border: 1px solid #71BB33
+    }
+  } // buttons
+
+  &__desc{
+    height: 5rem;
+  }
+} // shop item
+
+
+@media(max-width: 767px){
+  .shop-item{
+    text-align: center;
+  }
+}

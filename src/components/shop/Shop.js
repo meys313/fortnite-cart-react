@@ -16,7 +16,6 @@ const Shop = () => {
         })
     }, [])
 
-    console.log(items)
     return(
         <main className="shop">
             {
