@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fortnite-cart-react.git/static/css/main.1b62c6dd.css",
+    "main.js": "/fortnite-cart-react.git/static/js/main.68f4cbf0.js",
+    "index.html": "/fortnite-cart-react.git/index.html",
+    "main.1b62c6dd.css.map": "/fortnite-cart-react.git/static/css/main.1b62c6dd.css.map",
+    "main.68f4cbf0.js.map": "/fortnite-cart-react.git/static/js/main.68f4cbf0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b62c6dd.css",
+    "static/js/main.68f4cbf0.js"
+  ]
+}
