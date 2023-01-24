@@ -11,6 +11,7 @@
     .card-link{
       align-self: center;
       color: $mainBgColor;
+      
     }
 
     button{
@@ -24,7 +25,12 @@
     height: 5rem;
   }
 } // shop item
+.shop-item-price{
 
+  span{
+
+  }
+}
 
 @media(max-width: 767px){
   .shop-item{

@@ -1,4 +1,6 @@
-import './shop-item.scss'
+import './shop-item.scss';
+import {useContext} from "react";
+import CartContext from "../../store/cartContext";
 const ShopItem = (props) => {
     const {
         mainId:id,
@@ -8,6 +10,12 @@ const ShopItem = (props) => {
         displayAssets:assets
 
     } = props;
+
+    const cartContext = useContext(CartContext);
+
+    const onAddItemHandler = () => {
+        cartContext.addItem([id, name, desc, price]);
+    }
 
     return(
         <div className="card shop-item">
@@ -19,13 +27,13 @@ const ShopItem = (props) => {
                     </p>
                 </div>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">price: {price['regularPrice']}</li>
+                    <li className="list-group-item shop-item-price">price: <span>{price['regularPrice']}</span></li>
                     <li className="list-group-item">A second item</li>
                     <li className="list-group-item">A third item</li>
                 </ul>
                 <div className="card-body shop-item__buttons">
                     <a href="#" className="card-link">Card link</a>
-                    <button type="button" className="btn btn-success">Add</button>
+                    <button type="button" className="btn btn-success" onClick={onAddItemHandler}>Add</button>
                 </div>
         </div>
     )

@@ -1,0 +1,67 @@
+@import"../../vars";
+.cart{
+  position: fixed;
+  right: 2rem;
+  top: 8rem;
+  height: 4rem;
+  width: 4rem;
+  background-color:#71BB33;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0.1s;
+  i{
+    font-size: 2rem;
+    color:#fff;
+  }
+}
+
+.cart:hover {
+  background-color: $mainBgColor;
+}
+
+.cart__wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__amount{
+  position: absolute;
+  right: -.5rem;
+  bottom: .2rem;
+  background-color: #EB4C42;
+  color:#fff;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width: 1269px){
+  .cart{
+    right: 1rem;
+  }
+}
+
+@media(max-width: 870px){
+  .cart{
+    right: .5rem;
+  }
+}
+
+@media(max-width: 767px){
+  .cart{
+    height: 5rem;
+    width: 5rem;
+    top: 6rem;
+    right: 0;
+    z-index: 2;
+    i{
+    font-size: 2.4rem;
+  }
+  }
+
+}
