@@ -1,0 +1,18 @@
+@import "../../vars";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.header{
+  flex-basis: 10%;
+  background-color:$mainBgColor;
+  .nav-link{
+    color:$TextColorWhite;
+  }
+
+  &-brand{
+      color:$TextColorWhite;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 0.1rem;
+      font-size: 1.4rem;
+    }
+
+}

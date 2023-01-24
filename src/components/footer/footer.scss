@@ -1,0 +1,11 @@
+@import "../../vars";
+.footer{
+  flex-basis: 10%;
+}
+.footer-copyright{
+  background-color: $mainBgColor;
+  color:$TextColorWhite;
+  a{
+    color: $TextColorWhite;
+  }
+}

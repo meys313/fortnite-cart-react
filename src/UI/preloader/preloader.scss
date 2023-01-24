@@ -1,0 +1,10 @@
+@import "../../_vars.scss";
+
+.preloader{
+    display: flex;
+    justify-content: center;
+    .spinner-grow{
+        color:$mainBgColor;
+        margin-left: 1rem;
+    }
+}
