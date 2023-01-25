@@ -1,7 +1,7 @@
 @import '../../vars';
 .shop-item{
   margin: 0 auto 2rem auto;
-  width: 100%;
+  width:100%;
   cursor: pointer;
   position: relative;
   &__buttons{
@@ -26,6 +26,10 @@
     height: 5rem;
   }
 } // shop item
+
+.shop-item.crutch{
+    width: 30%;
+}
 .shop-item-price{
 
   span{
@@ -46,9 +50,26 @@
 }
 
 
-
+@media(max-width: 900px){
+  .shop-item.crutch{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .card-link{
+    display: none;
+  }
+}
 @media(max-width: 767px){
   .shop-item{
     text-align: center;
+    .btn{
+      width: 50%;
+    }
+  }
+}
+
+@media(max-width: 560px){
+  .shop-item.crutch{
+    width: 90%;
   }
 }

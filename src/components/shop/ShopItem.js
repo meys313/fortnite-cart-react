@@ -40,7 +40,7 @@ const ShopItem = (props) => {
     }, [buttonDisabled])
 
     return(
-        <div className="card shop-item">
+        <div className={`card shop-item ${props.itemLength <= 2 ? "crutch": null}`}>
             <img src={assets[0]['full_background']} className="card-img-top" alt={name}/>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

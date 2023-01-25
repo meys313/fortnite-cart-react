@@ -1,6 +1,7 @@
 @import "../../vars";
 .footer{
   flex-basis: 10%;
+  background-color: rgba(113,187,51, .1);
 }
 .footer-copyright{
   background-color: $mainBgColor;
@@ -8,4 +9,6 @@
   a{
     color: $TextColorWhite;
   }
+}
+.footer-desc{
 }

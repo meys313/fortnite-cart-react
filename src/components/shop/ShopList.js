@@ -23,7 +23,7 @@ const ShopList = (props) => {
                                                 item => {
                                                     return(
                                                         <div key={item.mainId} className="col-md">
-                                                            <ShopItem {...item}/>
+                                                            <ShopItem {...item} itemLength = {props.items.length}/>
                                                         </div>
                                                     )
                                                 }

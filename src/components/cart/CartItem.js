@@ -9,7 +9,6 @@ const CartItem = props =>{
     const onRemoveItemHandler = (id) => {
         cartContext.removeItem(id)
     }
-    console.log(assets)
     return (
         <div className="cart-item">
             <img className="cart-item--img" src={assets[0]['full_background']} alt={name}/>
