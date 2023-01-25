@@ -6,11 +6,18 @@ const CartContextProvider = props =>{
     const  [items, setItems] = useState([])
 
     const addItemHandler = (item) => {
-        setItems(prevState => [...prevState, item])
+        const checkItemIndex = items.findIndex(i => {
+            return i.id === item.id
+        })
+        if (checkItemIndex === -1){
+            setItems(prevState => [...prevState, item])
+        }
     }
 
-    const removeItemHandler = () => {
-
+    const removeItemHandler = (id) => {
+        setItems(
+            items.filter(item=> item.id !== id)
+        )
     }
 
     const cartContextProps = {

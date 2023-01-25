@@ -3,6 +3,7 @@
   margin: 0 auto 2rem auto;
   width: 100%;
   cursor: pointer;
+  position: relative;
   &__buttons{
     display: flex;
     justify-content: space-around;
@@ -31,6 +32,20 @@
 
   }
 }
+
+.shop-item .alert{
+  position:absolute;
+  z-index: 3;
+  bottom: 5rem;
+  font-size: 1rem;
+  transition: bottom 2s linear, opacity 1s linear;
+  opacity: 0;
+  background-color: $mainBgColor;
+  color:#fff;
+  border-color: #fff;
+}
+
+
 
 @media(max-width: 767px){
   .shop-item{

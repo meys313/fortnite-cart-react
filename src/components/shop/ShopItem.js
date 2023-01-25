@@ -1,5 +1,5 @@
 import './shop-item.scss';
-import {useContext} from "react";
+import {useContext, useState, useEffect} from "react";
 import CartContext from "../../store/cartContext";
 const ShopItem = (props) => {
     const {
@@ -13,9 +13,31 @@ const ShopItem = (props) => {
 
     const cartContext = useContext(CartContext);
 
+    const [buttonDisabled, setButtonDisabled] = useState(false)
+    const [styleEffect, setStyleEffect] = useState({});
+
     const onAddItemHandler = () => {
-        cartContext.addItem([id, name, desc, price]);
+        if (!buttonDisabled){
+            setButtonDisabled(prevState => !prevState)
+        }
+        cartContext.addItem({id, name, desc, price, assets});
     }
+
+
+    useEffect(()=>{
+        if (!buttonDisabled){
+            return
+        }
+        setStyleEffect(prevState => {return{...prevState, opacity:1,bottom: "50%" }})
+
+        const timer = setTimeout(()=>
+            setStyleEffect(prevState => {return {...prevState, opacity:0}}), 500)
+
+        return () => {
+            clearTimeout(timer)
+        }
+
+    }, [buttonDisabled])
 
     return(
         <div className="card shop-item">
@@ -33,7 +55,19 @@ const ShopItem = (props) => {
                 </ul>
                 <div className="card-body shop-item__buttons">
                     <a href="#" className="card-link">Card link</a>
-                    <button type="button" className="btn btn-success" onClick={onAddItemHandler}>Add</button>
+
+
+                    <div className="alert alert-success" style={styleEffect} role="alert">
+                        Item added
+                    </div>
+
+                    <button
+                        type="button"
+                        className="btn btn-success"
+                        onClick={onAddItemHandler}
+                        disabled={buttonDisabled}
+
+                    >Add</button>
                 </div>
         </div>
     )

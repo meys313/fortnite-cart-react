@@ -1,0 +1,45 @@
+@import '../../vars';
+.cart-items{
+  max-height: 58vh;
+  overflow: auto;
+}
+.cart-items--header{
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: $mainBgColor;
+  h3{
+    font-family: $fortniteFont;
+    color:#fff;
+  }
+}
+
+.cart-items--total {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+
+}
+.cart-items--count{
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 760px){
+  .cart-items{
+
+  }
+}
+
+@media(max-width: 560px){
+  .cart-items{
+
+  }
+}
+
+@media(max-width: 360px){
+  .cart-items{
+
+  }
+}
